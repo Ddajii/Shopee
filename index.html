@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopee Demo</title>
-    <link rel="icon" type="image/x-icon" href="./assets/img/Shopee-logo.png" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      sizes="32x32"
+      href="./assets/img/Favicon-S.png"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -28,6 +33,7 @@
   </head>
   <body>
     <div class="app">
+      <!-- Header -->
       <header class="header">
         <div class="grid">
           <nav class="header__navbar">
@@ -446,7 +452,6 @@
           </div>
         </div>
       </header>
-
       <div class="app__container">
         <div class="grid">
           <div class="grid__row app__content">
@@ -485,11 +490,13 @@
                 </ul>
               </nav>
             </div>
-
+            <!-- Filter -->
             <div class="grid__col-10">
               <div class="home-filter">
                 <span class="home-filter__label">Sắp xếp theo</span>
-                <button class="home-filter__btn btn btn--primary">Phổ biến</button>
+                <button class="home-filter__btn btn btn--primary">
+                  Phổ biến
+                </button>
                 <button class="home-filter__btn btn">Mới nhất</button>
                 <button class="home-filter__btn btn">Bán chạy</button>
 
@@ -497,8 +504,16 @@
                   <span class="select-input__label">Giá</span>
                   <i class="select-input__icon fa-solid fa-chevron-down"></i>
                   <ul class="select-input__option">
-                    <li class="select-input__item"><a href="" class="select-input__link">Giá: Thấp đến cao</a></li>
-                    <li class="select-input__item"><a href="" class="select-input__link">Giá: Thấp đến cao</a></li>
+                    <li class="select-input__item">
+                      <a href="" class="select-input__link"
+                        >Giá: Thấp đến cao</a
+                      >
+                    </li>
+                    <li class="select-input__item">
+                      <a href="" class="select-input__link"
+                        >Giá: Thấp đến cao</a
+                      >
+                    </li>
                   </ul>
                 </div>
                 <div class="home-filter__paginate">
@@ -506,23 +521,829 @@
                     <span class="paginate-current">1</span>/14
                   </span>
                   <div class="page-control">
-                    <a href="" class="page-control__btn page-control__btn--disabled"
+                    <a
+                      href=""
+                      class="page-control__btn page-control__btn--disabled"
                       ><i class="page-control__icon fa-solid fa-angle-left"></i
                     ></a>
                     <a href="" class="page-control__btn"
                       ><i class="page-control__icon fa-solid fa-angle-right"></i
                     ></a>
                   </div>
-                  
                 </div>
-                
+              </div>
+              <!-- Product -->
+              <div class="home-product">
+                <div class="grid__row">
+                  <div class="grid__col-2-10">
+                    <!-- Product item -->
+                    <a href="#" class="home-product-item">
+                      <div
+                        class="home-product-item__img"
+                        style="
+                          background-image: url(https://img.abaha.vn/photos/resized/320x/83-1597318354-myphamohui-lgvina.png);
+                        "
+                      ></div>
+                      <h4 class="home-product-item__name">
+                        Set kem chống nắng Whoo Seol radiant white tone up
+                        sunscreen SPF50PA 50ms
+                      </h4>
+                      <div class="home-product-item__price">
+                        <span class="price-old">1.250.000đ</span>
+                        <span class="price-current">1.125.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span
+                          class="home-product-item__like home-product-item__like--liked"
+                          ><i
+                            class="home-product-item__like-icon-empty fa-regular fa-heart"
+                          ></i
+                          ><i
+                            class="home-product-item__like-icon-fill fa-solid fa-heart"
+                          ></i
+                        ></span>
+                        <!-- <i class="fa-solid fa-heart"></i> -->
+                        <div class="home-product-item__rating">
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <!-- <i class="fa-solid fa-star"></i
+                          > -->
+                        </div>
+                        <span class="home-product-item__sold">120 đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">D-Beauti</span>
+                        <span class="home-product-item__origin-name"
+                          >Hàn Quốc</span
+                        >
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent"
+                          >10%</span
+                        >
+                        <span class="home-product-item__sale-off-label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="grid__col-2-10">
+                    <!-- Product item -->
+                    <a href="#" class="home-product-item">
+                      <div
+                        class="home-product-item__img"
+                        style="
+                          background-image: url(https://img.abaha.vn/photos/resized/320x/83-1597318354-myphamohui-lgvina.png);
+                        "
+                      ></div>
+                      <h4 class="home-product-item__name">
+                        Set kem chống nắng Whoo Seol radiant white tone up
+                        sunscreen SPF50PA 50ms
+                      </h4>
+                      <div class="home-product-item__price">
+                        <span class="price-old">1.250.000đ</span>
+                        <span class="price-current">1.125.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span
+                          class="home-product-item__like home-product-item__like--liked"
+                          ><i
+                            class="home-product-item__like-icon-empty fa-regular fa-heart"
+                          ></i
+                          ><i
+                            class="home-product-item__like-icon-fill fa-solid fa-heart"
+                          ></i
+                        ></span>
+                        <!-- <i class="fa-solid fa-heart"></i> -->
+                        <div class="home-product-item__rating">
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <!-- <i class="fa-solid fa-star"></i
+                          > -->
+                        </div>
+                        <span class="home-product-item__sold">120 đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">D-Beauti</span>
+                        <span class="home-product-item__origin-name"
+                          >Hàn Quốc</span
+                        >
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent"
+                          >10%</span
+                        >
+                        <span class="home-product-item__sale-off-label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="grid__col-2-10">
+                    <!-- Product item -->
+                    <a href="#" class="home-product-item">
+                      <div
+                        class="home-product-item__img"
+                        style="
+                          background-image: url(https://img.abaha.vn/photos/resized/320x/83-1597318354-myphamohui-lgvina.png);
+                        "
+                      ></div>
+                      <h4 class="home-product-item__name">
+                        Set kem chống nắng Whoo Seol radiant white tone up
+                        sunscreen SPF50PA 50ms
+                      </h4>
+                      <div class="home-product-item__price">
+                        <span class="price-old">1.250.000đ</span>
+                        <span class="price-current">1.125.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span
+                          class="home-product-item__like home-product-item__like--liked"
+                          ><i
+                            class="home-product-item__like-icon-empty fa-regular fa-heart"
+                          ></i
+                          ><i
+                            class="home-product-item__like-icon-fill fa-solid fa-heart"
+                          ></i
+                        ></span>
+                        <!-- <i class="fa-solid fa-heart"></i> -->
+                        <div class="home-product-item__rating">
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <!-- <i class="fa-solid fa-star"></i
+                          > -->
+                        </div>
+                        <span class="home-product-item__sold">120 đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">D-Beauti</span>
+                        <span class="home-product-item__origin-name"
+                          >Hàn Quốc</span
+                        >
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent"
+                          >10%</span
+                        >
+                        <span class="home-product-item__sale-off-label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="grid__col-2-10">
+                    <!-- Product item -->
+                    <a href="#" class="home-product-item">
+                      <div
+                        class="home-product-item__img"
+                        style="
+                          background-image: url(https://img.abaha.vn/photos/resized/320x/83-1597318354-myphamohui-lgvina.png);
+                        "
+                      ></div>
+                      <h4 class="home-product-item__name">
+                        Set kem chống nắng Whoo Seol radiant white tone up
+                        sunscreen SPF50PA 50ms
+                      </h4>
+                      <div class="home-product-item__price">
+                        <span class="price-old">1.250.000đ</span>
+                        <span class="price-current">1.125.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span
+                          class="home-product-item__like home-product-item__like--liked"
+                          ><i
+                            class="home-product-item__like-icon-empty fa-regular fa-heart"
+                          ></i
+                          ><i
+                            class="home-product-item__like-icon-fill fa-solid fa-heart"
+                          ></i
+                        ></span>
+                        <!-- <i class="fa-solid fa-heart"></i> -->
+                        <div class="home-product-item__rating">
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <!-- <i class="fa-solid fa-star"></i
+                          > -->
+                        </div>
+                        <span class="home-product-item__sold">120 đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">D-Beauti</span>
+                        <span class="home-product-item__origin-name"
+                          >Hàn Quốc</span
+                        >
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent"
+                          >10%</span
+                        >
+                        <span class="home-product-item__sale-off-label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="grid__col-2-10">
+                    <!-- Product item -->
+                    <a href="#" class="home-product-item">
+                      <div
+                        class="home-product-item__img"
+                        style="
+                          background-image: url(https://img.abaha.vn/photos/resized/320x/83-1597318354-myphamohui-lgvina.png);
+                        "
+                      ></div>
+                      <h4 class="home-product-item__name">
+                        Set kem chống nắng Whoo Seol radiant white tone up
+                        sunscreen SPF50PA 50ms
+                      </h4>
+                      <div class="home-product-item__price">
+                        <span class="price-old">1.250.000đ</span>
+                        <span class="price-current">1.125.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span
+                          class="home-product-item__like home-product-item__like--liked"
+                          ><i
+                            class="home-product-item__like-icon-empty fa-regular fa-heart"
+                          ></i
+                          ><i
+                            class="home-product-item__like-icon-fill fa-solid fa-heart"
+                          ></i
+                        ></span>
+                        <!-- <i class="fa-solid fa-heart"></i> -->
+                        <div class="home-product-item__rating">
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <!-- <i class="fa-solid fa-star"></i
+                          > -->
+                        </div>
+                        <span class="home-product-item__sold">120 đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">D-Beauti</span>
+                        <span class="home-product-item__origin-name"
+                          >Hàn Quốc</span
+                        >
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent"
+                          >10%</span
+                        >
+                        <span class="home-product-item__sale-off-label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="grid__col-2-10">
+                    <!-- Product item -->
+                    <a href="#" class="home-product-item">
+                      <div
+                        class="home-product-item__img"
+                        style="
+                          background-image: url(https://img.abaha.vn/photos/resized/320x/83-1597318354-myphamohui-lgvina.png);
+                        "
+                      ></div>
+                      <h4 class="home-product-item__name">
+                        Set kem chống nắng Whoo Seol radiant white tone up
+                        sunscreen SPF50PA 50ms
+                      </h4>
+                      <div class="home-product-item__price">
+                        <span class="price-old">1.250.000đ</span>
+                        <span class="price-current">1.125.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span
+                          class="home-product-item__like home-product-item__like--liked"
+                          ><i
+                            class="home-product-item__like-icon-empty fa-regular fa-heart"
+                          ></i
+                          ><i
+                            class="home-product-item__like-icon-fill fa-solid fa-heart"
+                          ></i
+                        ></span>
+                        <!-- <i class="fa-solid fa-heart"></i> -->
+                        <div class="home-product-item__rating">
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <!-- <i class="fa-solid fa-star"></i
+                          > -->
+                        </div>
+                        <span class="home-product-item__sold">120 đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">D-Beauti</span>
+                        <span class="home-product-item__origin-name"
+                          >Hàn Quốc</span
+                        >
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent"
+                          >10%</span
+                        >
+                        <span class="home-product-item__sale-off-label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="grid__col-2-10">
+                    <!-- Product item -->
+                    <a href="#" class="home-product-item">
+                      <div
+                        class="home-product-item__img"
+                        style="
+                          background-image: url(https://img.abaha.vn/photos/resized/320x/83-1597318354-myphamohui-lgvina.png);
+                        "
+                      ></div>
+                      <h4 class="home-product-item__name">
+                        Set kem chống nắng Whoo Seol radiant white tone up
+                        sunscreen SPF50PA 50ms
+                      </h4>
+                      <div class="home-product-item__price">
+                        <span class="price-old">1.250.000đ</span>
+                        <span class="price-current">1.125.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span
+                          class="home-product-item__like home-product-item__like--liked"
+                          ><i
+                            class="home-product-item__like-icon-empty fa-regular fa-heart"
+                          ></i
+                          ><i
+                            class="home-product-item__like-icon-fill fa-solid fa-heart"
+                          ></i
+                        ></span>
+                        <!-- <i class="fa-solid fa-heart"></i> -->
+                        <div class="home-product-item__rating">
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <!-- <i class="fa-solid fa-star"></i
+                          > -->
+                        </div>
+                        <span class="home-product-item__sold">120 đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">D-Beauti</span>
+                        <span class="home-product-item__origin-name"
+                          >Hàn Quốc</span
+                        >
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent"
+                          >10%</span
+                        >
+                        <span class="home-product-item__sale-off-label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="grid__col-2-10">
+                    <!-- Product item -->
+                    <a href="#" class="home-product-item">
+                      <div
+                        class="home-product-item__img"
+                        style="
+                          background-image: url(https://img.abaha.vn/photos/resized/320x/83-1597318354-myphamohui-lgvina.png);
+                        "
+                      ></div>
+                      <h4 class="home-product-item__name">
+                        Set kem chống nắng Whoo Seol radiant white tone up
+                        sunscreen SPF50PA 50ms
+                      </h4>
+                      <div class="home-product-item__price">
+                        <span class="price-old">1.250.000đ</span>
+                        <span class="price-current">1.125.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span
+                          class="home-product-item__like home-product-item__like--liked"
+                          ><i
+                            class="home-product-item__like-icon-empty fa-regular fa-heart"
+                          ></i
+                          ><i
+                            class="home-product-item__like-icon-fill fa-solid fa-heart"
+                          ></i
+                        ></span>
+                        <!-- <i class="fa-solid fa-heart"></i> -->
+                        <div class="home-product-item__rating">
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <!-- <i class="fa-solid fa-star"></i
+                          > -->
+                        </div>
+                        <span class="home-product-item__sold">120 đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">D-Beauti</span>
+                        <span class="home-product-item__origin-name"
+                          >Hàn Quốc</span
+                        >
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent"
+                          >10%</span
+                        >
+                        <span class="home-product-item__sale-off-label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="grid__col-2-10">
+                    <!-- Product item -->
+                    <a href="#" class="home-product-item">
+                      <div
+                        class="home-product-item__img"
+                        style="
+                          background-image: url(https://img.abaha.vn/photos/resized/320x/83-1597318354-myphamohui-lgvina.png);
+                        "
+                      ></div>
+                      <h4 class="home-product-item__name">
+                        Set kem chống nắng Whoo Seol radiant white tone up
+                        sunscreen SPF50PA 50ms
+                      </h4>
+                      <div class="home-product-item__price">
+                        <span class="price-old">1.250.000đ</span>
+                        <span class="price-current">1.125.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span
+                          class="home-product-item__like home-product-item__like--liked"
+                          ><i
+                            class="home-product-item__like-icon-empty fa-regular fa-heart"
+                          ></i
+                          ><i
+                            class="home-product-item__like-icon-fill fa-solid fa-heart"
+                          ></i
+                        ></span>
+                        <!-- <i class="fa-solid fa-heart"></i> -->
+                        <div class="home-product-item__rating">
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <!-- <i class="fa-solid fa-star"></i
+                          > -->
+                        </div>
+                        <span class="home-product-item__sold">120 đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">D-Beauti</span>
+                        <span class="home-product-item__origin-name"
+                          >Hàn Quốc</span
+                        >
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent"
+                          >10%</span
+                        >
+                        <span class="home-product-item__sale-off-label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="grid__col-2-10">
+                    <!-- Product item -->
+                    <a href="#" class="home-product-item">
+                      <div
+                        class="home-product-item__img"
+                        style="
+                          background-image: url(https://img.abaha.vn/photos/resized/320x/83-1597318354-myphamohui-lgvina.png);
+                        "
+                      ></div>
+                      <h4 class="home-product-item__name">
+                        Set kem chống nắng Whoo Seol radiant white tone up
+                        sunscreen SPF50PA 50ms
+                      </h4>
+                      <div class="home-product-item__price">
+                        <span class="price-old">1.250.000đ</span>
+                        <span class="price-current">1.125.000đ</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span
+                          class="home-product-item__like home-product-item__like--liked"
+                          ><i
+                            class="home-product-item__like-icon-empty fa-regular fa-heart"
+                          ></i
+                          ><i
+                            class="home-product-item__like-icon-fill fa-solid fa-heart"
+                          ></i
+                        ></span>
+                        <!-- <i class="fa-solid fa-heart"></i> -->
+                        <div class="home-product-item__rating">
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star__gold fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <span class="home-product-item__star"
+                            ><i
+                              class="home-product-item__star fa-solid fa-star"
+                            ></i
+                          ></span>
+                          <!-- <i class="fa-solid fa-star"></i
+                          > -->
+                        </div>
+                        <span class="home-product-item__sold">120 đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">D-Beauti</span>
+                        <span class="home-product-item__origin-name"
+                          >Hàn Quốc</span
+                        >
+                      </div>
+                      <div class="home-product-item__favourite">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Yêu thích</span>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent"
+                          >10%</span
+                        >
+                        <span class="home-product-item__sale-off-label"
+                          >GIẢM</span
+                        >
+                      </div>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- Footer -->
       <footer class="footer"></footer>
     </div>
+    
 
     <!-- Modal -->
     <!-- <div class="modal"> -->
