@@ -149,6 +149,7 @@ html {
   min-width: 200px;
   font-size: 1.4rem;
   color: var(--text-color);
+  
 }
 
 .select-input__icon {
