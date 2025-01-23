@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Shopee Demo</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/Shopee-logo.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -230,13 +231,41 @@
                   Hỗ trợ</a
                 >
               </li>
-              <li
+              <!-- <li
                 class="header__navbar-item header__navbar-item--strong header__navbar-item--separate"
               >
                 Đăng ký
               </li>
               <li class="header__navbar-item header__navbar-item--strong">
                 Đăng nhập
+              </li> -->
+
+              <li
+                class="header__navbar-item header__navbar-user .header__navbar-item--display"
+              >
+                <img
+                  src="./assets/img/avt-dog-cute.png"
+                  alt=""
+                  class="header__navbar-user-img"
+                />
+                <span class="header__navbar-user-name">Dương Đại</span>
+
+                <ul class="header__navbar-user-menu">
+                  <li class="header__navbar-user-item">
+                    <a href="#">Tài khoản của tôi</a>
+                  </li>
+                  <li class="header__navbar-user-item">
+                    <a href="#">Địa chỉ của tôi</a>
+                  </li>
+                  <li class="header__navbar-user-item">
+                    <a href="#">Đơn mua</a>
+                  </li>
+                  <li
+                    class="header__navbar-user-item header__navbar-user-item--separate"
+                  >
+                    <a href="#">Đăng xuất</a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </nav>
@@ -326,8 +355,8 @@
                       <div class="header__cart-item-info">
                         <div class="header__cart-item-head">
                           <h5 class="header__cart-item-name">
-                            Combo nước hoa chính hãng Daji - Hương thanh lịch, thơm
-                            lâu, cuốn lắm
+                            Combo nước hoa chính hãng Daji - Hương thanh lịch,
+                            thơm lâu, cuốn lắm
                           </h5>
                           <div class="header__cart-item-price-wrap">
                             <span class="header__cart-item-price"
@@ -386,7 +415,7 @@
                       <div class="header__cart-item-info">
                         <div class="header__cart-item-head">
                           <h5 class="header__cart-item-name">
-                            Bình giữ nhiệt Daji Siêu bền - Giữ nhiệt tốt 
+                            Bình giữ nhiệt Daji Siêu bền - Giữ nhiệt tốt
                           </h5>
                           <div class="header__cart-item-price-wrap">
                             <span class="header__cart-item-price"
@@ -398,7 +427,7 @@
                         </div>
                         <div class="header__cart-item-body">
                           <span class="header__cart-item-description">
-                            Phân loại: Bạc 
+                            Phân loại: Bạc
                           </span>
                           <span class="header__cart-item-remove">Xóa</span>
                           <!-- <button class="btn btn--primary header__cart-item-remove-btn">
@@ -408,22 +437,98 @@
                       </div>
                     </li>
                   </ul>
-                  <a href="#" class="header__cart-view btn btn--primary">Xem giỏ hàng</a>
+                  <a href="#" class="header__cart-view btn btn--primary"
+                    >Xem giỏ hàng</a
+                  >
                 </div>
               </div>
             </div>
           </div>
         </div>
       </header>
-      <div class="container"></div>
+
+      <div class="app__container">
+        <div class="grid">
+          <div class="grid__row app__content">
+            <div class="grid__col-2">
+              <nav class="category">
+                <h3 class="category__heading">
+                  <i class="category__heading-icon fa-solid fa-list"></i>
+                  Danh mục
+                </h3>
+                <ul class="category-list">
+                  <li class="category-item category-item--active">
+                    <a
+                      href="#"
+                      class="category-item__link category-item--active"
+                      >Trang điểm mặt</a
+                    >
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">Trang điểm môi</a>
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">Trang điểm mắt</a>
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">Makeup colection</a>
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">Kem chống nắng</a>
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">Kem dưỡng ẩm</a>
+                  </li>
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">Tẩy trang</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="grid__col-10">
+              <div class="home-filter">
+                <span class="home-filter__label">Sắp xếp theo</span>
+                <button class="home-filter__btn btn btn--primary">Phổ biến</button>
+                <button class="home-filter__btn btn">Mới nhất</button>
+                <button class="home-filter__btn btn">Bán chạy</button>
+
+                <div class="select-input">
+                  <span class="select-input__label">Giá</span>
+                  <i class="select-input__icon fa-solid fa-chevron-down"></i>
+                  <ul class="select-input__option">
+                    <li class="select-input__item"><a href="" class="select-input__link">Giá: Thấp đến cao</a></li>
+                    <li class="select-input__item"><a href="" class="select-input__link">Giá: Thấp đến cao</a></li>
+                  </ul>
+                </div>
+                <div class="home-filter__paginate">
+                  <span class="paginate-num">
+                    <span class="paginate-current">1</span>/14
+                  </span>
+                  <div class="page-control">
+                    <a href="" class="page-control__btn page-control__btn--disabled"
+                      ><i class="page-control__icon fa-solid fa-angle-left"></i
+                    ></a>
+                    <a href="" class="page-control__btn"
+                      ><i class="page-control__icon fa-solid fa-angle-right"></i
+                    ></a>
+                  </div>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <footer class="footer"></footer>
     </div>
 
     <!-- Modal -->
     <!-- <div class="modal"> -->
-      <!-- <div class="modal__overlay"></div> -->
-      <!-- <div class="modal__body">  -->
-        <!-- Register form -->
+    <!-- <div class="modal__overlay"></div> -->
+    <!-- <div class="modal__body">  -->
+    <!-- Register form -->
     <!-- <div class="auth-form">
           <div class="auth-form__container">
             <div class="auth-form__header">
