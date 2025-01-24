@@ -1142,3 +1142,137 @@ i.home-product-item__like-icon-fill{
 .home-pagination{
   margin: 48px 0 32px 0;
 }
+
+/* Footer */
+.footer{
+  padding-top: 16px;
+  border-top: 4px solid var(--primary-color);
+  
+}
+.footer__heading{
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: var(--text-color);
+
+}
+.footer-list{
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-item{
+
+}
+
+.footer-link{
+  display: flex;
+  padding: 2px 0;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #737373;
+  line-height: 2rem;;
+  align-items: center;
+  
+}
+.footer-link:hover{
+  color: var(--primary-color);
+}
+
+.footer-icon{
+  font-size: 1.6rem;
+  margin: -1px 8px 0 0;
+
+}
+.footer__download{
+  display: flex;
+}
+.footer__download-qr-img{
+  width: 80px;
+  height: 80px;
+  border: 1px solid #ccc;
+}
+
+.footer__download-apps{
+  flex: 1;
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer__download-apps-img{
+  height: 20px;
+}
+.footer__download-apps-link{
+  color: transparent;
+  text-decoration: none;
+}
+/* END  */
+.footer__end{
+  padding: 8px 0;
+  margin-top: 36px;
+  background-color: #f5f5f5;
+}
+
+.footer__cs{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.footer__cs-item{
+  padding: 0 25px;
+  border-right: 1px solid rgba(0, 0, 0, .09);
+  
+}
+.footer__cs-item:last-child{
+  border-right: none;
+}
+.footer__cs-link{
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: rgba(0, 0, 0, .54);
+  text-decoration: none;
+  
+}
+
+.footer__kc{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin:0 0 10px 0;
+}
+.footer__kc-link{
+  color: rgba(0, 0, 0, .8);
+    margin: 0 1.25rem;
+    text-decoration: none;
+}
+.footer-vn-vn_registered_red-png{
+  background-position: 14.391143911439114% 99.41176470588235%;
+  background-size: 551.6666666666666% 477.77777777777777%;
+}
+ 
+
+.footer-vn-background{
+  background-image: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/9765d68a8945750d.png)
+}
+.footer-i{
+  height:3.5rem;
+  width: 9rem;
+}
+.footer-vn-vn_no_fake_item-png{
+  background-position: 1.6286644951140066% 92.21556886227545%;
+  background-size: 1379.1666666666667% 447.9166666666667%;
+}
+.footer-vt{
+  height: 4rem;
+  width: 4rem;
+}
+.footer__text{
+  margin: 0;
+  font-size: 1.2rem;
+  padding: 0 10px;
+  text-align: center;
+  color: #737373;
+
+}
