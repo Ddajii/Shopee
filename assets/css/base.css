@@ -196,8 +196,6 @@ html {
     width: 100%;
     
 }
-.select-input__item {
-}
 
 /* Pagination */
 .pagination{
@@ -230,8 +228,4 @@ html {
   text-align: center;
   border-radius: 2px;
   
-}
-
-.pagination-item-icon{
-
 }
